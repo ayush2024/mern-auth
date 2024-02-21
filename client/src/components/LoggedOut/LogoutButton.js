@@ -3,6 +3,7 @@ import axios from 'axios';
 import { useNavigate } from 'react-router-dom'
 
 const LogoutButton = () => {
+    axios.defaults.withCredentials = true;
     const [times, setTimes] = useState({ loggedInTime: null, loggedOutTime: null });
     const [user, setUser] = useState(JSON.parse(localStorage.getItem('user:detail')));
     const userId = user?.id;

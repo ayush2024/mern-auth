@@ -5,6 +5,7 @@ import './LoginSignup.css';
 import { useNavigate } from 'react-router-dom'
 
 const LoginSignup = () => {
+    axios.defaults.withCredentials = true;
     const navigate = useNavigate();
     const [login, setLogin] = useState(false);
     const [fullName, setFullName] = useState('');

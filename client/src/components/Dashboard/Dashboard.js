@@ -3,6 +3,7 @@ import {axios} from 'axios';
 import './Dashboard.css'
 
 const Dashboard = () => {
+    axios.defaults.withCredentials = true;
     const [users, setUsers] = useState([]);
 
     useEffect(() => {

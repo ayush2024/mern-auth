@@ -15,6 +15,7 @@ const Home = () => {
 
     // useEffect(() => {
     const handleLogout = async () => {
+        axios.defaults.withCredentials = true;
         try {
             const response = await axios.get(`https://mern-auth-api-woad.vercel.app/logout/${userId}`);
             const { loggedInTime, loggedOutTime } = response.data;
