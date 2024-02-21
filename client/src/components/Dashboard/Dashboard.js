@@ -8,7 +8,7 @@ const Dashboard = () => {
     useEffect(() => {
         const fetchUsers = async () => {
             try {
-                const response = await axios.get('http://localhost:8000/api/dashboard');
+                const response = await axios.get('https://mern-auth-api-woad.vercel.app/api/dashboard');
                 // console.log(response);
                 setUsers(response?.data);
             } catch (error) {
