@@ -1,10 +1,10 @@
 import {React, useState} from 'react'
-import Home from './components/Home/Home'
+import Home from './components/Home/Home.js'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import LoginSignup from './components/LoginSignup/LoginSignup';
-import Navbar from './components/NavBar/NavBar';
-import LogoutButton from './components/LoggedOut/LogoutButton';
-import Dashboard from './components/Dashboard/Dashboard';
+import LoginSignup from './components/LoginSignup/LoginSignup.js';
+import Navbar from './components/NavBar/NavBar.jsx';
+import LogoutButton from './components/LoggedOut/LogoutButton.js';
+import Dashboard from './components/Dashboard/Dashboard.js';
 
 const App = () => {
 

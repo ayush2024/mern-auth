@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom'
 import axios from 'axios';
 import './Home.css'
-import LoginSignup from '../LoginSignup/LoginSignup';
-import Dashboard from '../Dashboard/Dashboard';
+import LoginSignup from '../LoginSignup/LoginSignup.js';
+import Dashboard from '../Dashboard/Dashboard.js';
 
 const Home = () => {
     const navigate = useNavigate();

@@ -64,7 +64,7 @@ import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import './NavBar.css';
-import Dashboard from '../Dashboard/Dashboard';
+import Dashboard from '../Dashboard/Dashboard.js';
 
 const Navbar = () => {
   const navigate = useNavigate();
