@@ -1,0 +1,40 @@
+.mainH {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* Vertically center the content */
+    height: 50vh;
+    background: rgb(85, 80, 82);
+    background: radial-gradient(circle, rgba(85, 80, 82, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    color: white
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+.secondD {
+
+    text-align: center;
+    /* Center text horizontally */
+}
+
+.btnL {
+    background-color: rgb(43, 43, 243);
+    color: white;
+    font-style: none;
+    padding: 5px;
+    margin: 2px;
+    text-decoration: none;
+    /* Remove underline */
+    border: none;
+    /* Remove default border */
+    cursor: pointer;
+    /* Add pointer cursor for better UX */
+}
+
+.btnL:hover {
+    background-color: darkblue;
+    /* Example darker background color on hover */
+}

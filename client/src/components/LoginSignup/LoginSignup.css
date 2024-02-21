@@ -1,0 +1,53 @@
+.mainH {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.secondD {
+    width: 350px; /* Adjust width as needed */
+    padding: 20px;
+    background-color: #f0f0f0; 
+    /* background: rgb(85, 80, 82);
+    background: radial-gradient(circle, rgba(85, 80, 82, 1) 0%, rgba(148, 187, 233, 1) 100%); */
+    border-radius: 8px;
+    
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+.secondD label {
+    margin-bottom: 8px;
+}
+
+.secondD input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc; /* Example border color */
+    border-radius: 4px;
+}
+
+.btnL {
+    background-color: blue;
+    color: white;
+    font-style: none;
+    padding: 8px 16px;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 16px; /* Added margin-bottom */
+}
+
+.switch {
+    margin-left: 5px;
+    text-decoration: none;
+    color: blue;
+    cursor: pointer;
+}
+
+.btnL:hover {
+    background-color: darkblue; /* Example darker background color on hover */
+}

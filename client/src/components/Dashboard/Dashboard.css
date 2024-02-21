@@ -1,0 +1,58 @@
+.dashHH {
+    margin-left: 750px;
+}
+
+.stD {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    /* background-color: red; */
+    height: 100vh;
+    background: rgb(85,80,82);
+background: radial-gradient(circle, rgba(85,80,82,1) 0%, rgba(148,187,233,1) 100%);
+}
+
+.ndD {
+    grid-column: span 3;
+    /* background-color: yellow; */
+    
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.rdD {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    /* background-color: blue; */
+    
+}
+
+.allD {
+    padding: 20px;
+    /* border: 1px solid #ccc; */
+    /* background-color: black; */
+}
+
+.userDetails {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(116deg, rgb(227 201 201) 18%, rgba(123,123,138,1) 40%, rgb(243 243 243) 92%);
+    height: 30vh;
+    width: 100%;
+    color: rgb(0, 0, 0);
+    font-size: 1.2rem;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out; /* Add transition for smooth effect */
+}
+
+.userDetails:hover {
+    transform: scale(1.05); /* Scale up the element on hover */
+}
+
+
+.detail {
+    margin-bottom: 10px;
+}

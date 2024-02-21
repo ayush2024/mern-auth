@@ -1,0 +1,37 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /* background-color: blue; */
+  background: radial-gradient(circle, rgb(26 24 25) 0%, rgb(42 45 48) 100%);
+  padding: 5px 5px; /* Adjust padding as needed */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.4rem;
+  z-index: 1000; /* Ensure the navbar stays on top of other elements */
+  height: 60px;
+}
+
+.userName {
+  font-size: 2.5rem;
+  color: white;
+  margin-left: 100px; /* Adjust margin as needed */
+  margin-top: 15px;
+}
+
+.left, .right {
+  display: flex;
+  align-items: center;
+}
+
+.right{
+  margin-right: 40px;
+}
+
+.dash, .logio {
+  color: white;
+  cursor: pointer;
+  margin-left: 20px; /* Adjust margin as needed */
+}
