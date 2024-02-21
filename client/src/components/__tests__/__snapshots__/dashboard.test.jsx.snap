@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`match snapsot 1`] = `
+<div
+  className="stD"
+  data-testid="dash-test"
+>
+  <h1
+    className="dashHH"
+  >
+    Dashboard
+  </h1>
+  <div
+    className="ndD"
+  >
+    <div
+      className="rdD"
+    />
+  </div>
+</div>
+`;
