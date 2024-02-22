@@ -146,6 +146,11 @@ app.get('/api/dashboard', async (req, res) => {
     }
 });
 
+app.get('/favicon.ico', (req, res) => {
+    res.status(404).end();
+});
+
+
 app.listen(PORT, () => {
     console.log(`Server is listening at ${PORT}`);
 })
