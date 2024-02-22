@@ -19,6 +19,10 @@ app.use(express.urlencoded({ extended: false }));
 
 require('./db.js')
 
+app.post('/', (req, res)=>{
+    res.send('Server is running');
+})
+
 app.post('/api/register', async (req, res, next) => {
     try {
         const { fullName, email, password } = req.body;
