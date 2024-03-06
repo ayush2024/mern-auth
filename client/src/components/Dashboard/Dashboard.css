@@ -1,3 +1,4 @@
+/* Default styles */
 .dashHH {
     margin-left: 750px;
 }
@@ -6,16 +7,13 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    /* background-color: red; */
     height: 100vh;
-    background: rgb(85,80,82);
-background: radial-gradient(circle, rgba(85,80,82,1) 0%, rgba(148,187,233,1) 100%);
+    background: rgb(85, 80, 82);
+    background: radial-gradient(circle, rgba(85, 80, 82, 1) 0%, rgba(148, 187, 233, 1) 100%);
 }
 
 .ndD {
     grid-column: span 3;
-    /* background-color: yellow; */
-    
     padding: 20px;
     border-radius: 10px;
 }
@@ -24,14 +22,10 @@ background: radial-gradient(circle, rgba(85,80,82,1) 0%, rgba(148,187,233,1) 100
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    /* background-color: blue; */
-    
 }
 
 .allD {
     padding: 20px;
-    /* border: 1px solid #ccc; */
-    /* background-color: black; */
 }
 
 .userDetails {
@@ -39,20 +33,92 @@ background: radial-gradient(circle, rgba(85,80,82,1) 0%, rgba(148,187,233,1) 100
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(116deg, rgb(227 201 201) 18%, rgba(123,123,138,1) 40%, rgb(243 243 243) 92%);
-    height: 30vh;
+    background: linear-gradient(116deg, rgb(227 201 201) 18%, rgba(123, 123, 138, 1) 40%, rgb(243 243 243) 92%);
+    height: 35vh;
     width: 100%;
     color: rgb(0, 0, 0);
     font-size: 1.2rem;
     border-radius: 10px;
-    transition: transform 0.3s ease-in-out; /* Add transition for smooth effect */
+    transition: transform 0.3s ease-in-out;
+}
+
+.logedInUser {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(32, 68, 250);
+    background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgb(128, 70, 252) 100%);
+    height: 35vh;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+    font-size: 1.6rem;
+    font-weight: bold;
 }
 
 .userDetails:hover {
-    transform: scale(1.05); /* Scale up the element on hover */
+    transform: scale(1.05);
 }
-
+.logedInUser:hover {
+    transform: scale(1.05);
+}
 
 .detail {
     margin-bottom: 10px;
+}
+
+.filter {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    background-color: blue; /* Set background color to blue */
+    color: white;
+    padding: 2px;
+}
+
+.filter button {
+    padding: 10px 20px;
+    border: 2px solid #333;
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.filter button:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+
+.sorryMessage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 1.5rem;
+    color: red; /* Change color as needed */
+}
+
+
+/* Responsive styles */
+@media only screen and (max-width: 1000px) {
+    .dashHH {
+        margin-left: 20px; 
+    }
+
+    .stD {
+        grid-template-columns: 1fr;
+    }
+
+    .ndD, .rdD {
+        grid-column: span 1; 
+    }
+
+    .userDetails, .logedInUser{
+        height: 60vh;
+    }
 }

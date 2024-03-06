@@ -12,7 +12,7 @@ const LogoutButton = () => {
     useEffect(() => {
         const handleLogout = async () => {
             try {
-                const response = await axios.post('https://mern-auth-api-woad.vercel.app/logout', { userId });
+                const response = await axios.post('http://localhost:8000/api/logout', { userId });
                 const { loggedInTime, loggedOutTime } = response.data;
                 setTimes({ loggedInTime, loggedOutTime });
                 

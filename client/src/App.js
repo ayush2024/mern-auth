@@ -1,4 +1,4 @@
-import {React, useState} from 'react'
+import { React, useState } from 'react'
 import Home from './components/Home/Home.js'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import LoginSignup from './components/LoginSignup/LoginSignup.js';
@@ -17,12 +17,10 @@ const App = () => {
     <BrowserRouter>
       <Navbar />
       <Routes>
-
         <Route path='/' element={<Home />} />
         <Route path='/loginsignup' element={<LoginSignup />} />
-        <Route path='/logout' element={<LogoutButton />} />
+        {/* <Route path='/logout' element={<LogoutButton />} /> */}
         <Route path='/dashboard' element={<Dashboard />} />
-
       </Routes>
     </BrowserRouter>
   )

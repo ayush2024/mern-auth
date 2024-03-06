@@ -5,8 +5,9 @@ import './LoginSignup.css';
 import { useNavigate } from 'react-router-dom'
 
 const LoginSignup = () => {
-    axios.defaults.withCredentials = true;
+    
     const navigate = useNavigate();
+    
     const [login, setLogin] = useState(false);
     const [fullName, setFullName] = useState('');
     const [email, setEmail] = useState('');
@@ -15,19 +16,20 @@ const LoginSignup = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const res = await axios.post(`https://mern-auth-api-woad.vercel.app/${login ? 'login' : 'register'}`, {
+            const res = await axios.post(`http://localhost:8000/api/${login ? 'login' : 'register'}`, {
                 fullName,
                 email,
                 password
             });
             const resData = res.data;
+            
             if (resData.token) {
                 localStorage.setItem('user:token', resData.token);
                 localStorage.setItem('user:detail', JSON.stringify(resData.user));
                 console.log('User logged in successfully');
                 navigate('/');
             }
-            console.log(resData);
+            
         } catch (error) {
             console.error('Error:', error.response.data);
         }
