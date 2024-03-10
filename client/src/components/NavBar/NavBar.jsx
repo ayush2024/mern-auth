@@ -21,7 +21,7 @@ const Navbar = () => {
   const handleLogout = async () => {
     axios.defaults.withCredentials = true;
     try {
-      const response = await axios.get(`http://localhost:8000/api/logout/${userId}`);
+      const response = await axios.get(`https://zany-pear-coypu-sock.cyclic.app/api/logout/${userId}`);
       
       // const { loggedInTime, loggedOutTime } = response.data;
       // setTimes({ loggedInTime, loggedOutTime });

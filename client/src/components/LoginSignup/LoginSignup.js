@@ -16,7 +16,7 @@ const LoginSignup = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const res = await axios.post(`http://localhost:8000/api/${login ? 'login' : 'register'}`, {
+            const res = await axios.post(`https://zany-pear-coypu-sock.cyclic.app/api/${login ? 'login' : 'register'}`, {
                 fullName,
                 email,
                 password

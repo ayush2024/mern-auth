@@ -17,7 +17,7 @@ const Dashboard = () => {
     useEffect(() => {
         const fetchUsers = async () => {
             try {
-                const response = await axios.get('http://localhost:8000/api/dashboard');
+                const response = await axios.get('https://zany-pear-coypu-sock.cyclic.app/api/dashboard');
                 setUsers(response?.data);
                 setFilteredUsers(response?.data); 
                 console.log(response.data)
