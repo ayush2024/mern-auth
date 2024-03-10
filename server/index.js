@@ -9,7 +9,7 @@ const User = require('./Modals/User.js');
 
 const app = express();
 app.use(cors({
-    origin: 'http://localhost:3000',
+    origin: 'https://mern-auth-api-rose.vercel.app',
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
   }));
