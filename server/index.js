@@ -19,6 +19,14 @@ app.use(express.urlencoded({ extended: false }));
 
 require('./db.js')
 
+app.get("/", (req, res, next)=>{
+    return res.status(200).json({
+      success:true,
+      message:"Hello World",
+    })
+  })
+  
+
 app.post('/', (req, res)=>{
     res.send('Server is running');
 })
